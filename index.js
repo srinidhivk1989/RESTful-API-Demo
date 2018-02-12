@@ -23,6 +23,6 @@ app.use(function(err,req,res,next){
 });
 
 //listen for requests
-app.listen(4000,function(){
+app.listen(process.env.PORT || 4000,function(){
 console.log('now listening for requests');
 });
